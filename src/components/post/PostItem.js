@@ -212,6 +212,7 @@ const MenuItem = styled.button`
     font-size: 15px;
     font-weight: bold;
     text-align: left;
+    cursor: pointer;
     :hover {
         background-color: rgba(211,211,211,0.15);
     }

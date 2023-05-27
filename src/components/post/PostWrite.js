@@ -40,7 +40,7 @@ const PostWrite = () => {
         .post("http://43.202.14.234:8080/tweets", requestBody)
         .then((response) => {
             //console.log("Tweet posted:", response.data);
-            window.location.reload();
+            window.location.replace("/");
         })
         .catch((error) => {
             console.error("Error posting tweet:", error);
