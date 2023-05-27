@@ -175,7 +175,8 @@ const TweetButton = styled.button`
 
 const ProfileWrapper = styled.div`
     display: flex;
-    margin-top: 230px;
+    position: fixed;
+    bottom: 20px;
     padding: 10px;
     border-radius: 50px;
     margin-right: 10px;
