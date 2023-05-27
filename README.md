@@ -11,10 +11,10 @@
 
 ## 결과물 사진
 홈 화면
-![](https://github.com/teyeong/test/assets/100225783/41fca859-34e5-4bcf-be94-cf1d8b993cdf)
+![](https://github.com/teyeong/twitter-clone-frontend/assets/100225783/f7c8e877-5d3e-423d-bf13-fb3673b61c38)
 
 프로필 화면
-![](https://github.com/teyeong/test/assets/100225783/813d4ee3-7aed-4412-9796-64fe93592673)
+![](https://github.com/teyeong/twitter-clone-frontend/assets/100225783/8e3c6baf-8c96-456e-a6c7-f8c4e1d5c6f8)
 
 트윗 상세 화면
-![](https://github.com/teyeong/test/assets/100225783/48527dcb-ec1e-46b7-9364-63dd735819b2)
+![](https://github.com/teyeong/twitter-clone-frontend/assets/100225783/d67fbbde-ae65-4a82-93af-c9fa650c2df3)
