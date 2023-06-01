@@ -38,7 +38,7 @@ const PostWrite = () => {
         };
 
         try {
-            await axios.post("/api/tweets", requestBody);
+            await axios.post("http://43.202.14.234:8080/tweets", requestBody);
 
             // 삭제 시 새로고침
             window.location.replace("/");

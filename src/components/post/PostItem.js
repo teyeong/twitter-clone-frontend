@@ -61,7 +61,7 @@ const PostItem = (props) => {
     const handleDelete = async () => {
         try {
             // 트윗 삭제 요청 보내기
-            await axios.delete(`/api/tweets/${id}?accountId=${userId}`);
+            await axios.delete(`http://43.202.14.234:8080/tweets/${id}?accountId=${userId}`);
 
             // 삭제가 성공한 경우 페이지 리로드
             window.location.reload();
