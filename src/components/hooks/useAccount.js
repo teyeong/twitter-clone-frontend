@@ -11,7 +11,7 @@ const useAccount = () => {
         const getAccount = async () => {
             setLoading(true);
             try {         
-                const response = await axios.get("http://43.202.14.234:8080/accounts/1");
+                const response = await axios.get("/accounts/1");
                 setAccount(response.data);
 
             } catch (e) {

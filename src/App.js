@@ -19,7 +19,7 @@ function App() {
       const getPostList = async () => {
           setLoading(true);
           try {
-              const response = await axios.get("http://43.202.14.234:8080/tweets");
+              const response = await axios.get("/tweets");
               setTweets(response.data);
           } catch (e) {
               console.log(e);

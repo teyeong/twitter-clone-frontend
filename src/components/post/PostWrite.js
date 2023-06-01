@@ -37,7 +37,7 @@ const PostWrite = () => {
         };
 
         axios
-        .post("http://43.202.14.234:8080/tweets", requestBody)
+        .post("/tweets", requestBody)
         .then((response) => {
             //console.log("Tweet posted:", response.data);
             window.location.replace("/");

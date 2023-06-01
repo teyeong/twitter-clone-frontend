@@ -39,6 +39,7 @@
       "last 1 safari version"
     ]
   },
+  "proxy": "http://43.202.14.234:8080",
   "devDependencies": {
     "styled-components": "^5.3.10"
   }
