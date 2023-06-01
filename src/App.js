@@ -19,7 +19,7 @@ function App() {
       const getPostList = async () => {
           setLoading(true);
           try {
-              const response = await axios.get("/tweets");
+              const response = await axios.get("/api/tweets");
               setTweets(response.data);
           } catch (e) {
               console.log(e);

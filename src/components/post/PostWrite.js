@@ -37,7 +37,7 @@ const PostWrite = () => {
         };
 
         axios
-        .post("/tweets", requestBody)
+        .post("/api/tweets", requestBody)
         .then((response) => {
             //console.log("Tweet posted:", response.data);
             window.location.replace("/");
