@@ -19,6 +19,7 @@ const PostDetail = (props) => {
     const navigate = useNavigate();
     const { id } = useParams();
     const findTweet = tweets.find((tweet) => {
+        // eslint-disable-next-line eqeqeq
         return tweet.tweetId == id;
     });
 
