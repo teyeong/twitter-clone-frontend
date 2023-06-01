@@ -30,21 +30,21 @@ const PostWrite = () => {
         textarea.current.style.height = textarea.current.scrollHeight + 'px';
     };
 
-    const handlePostTweet = () => {
+
+    const handlePostTweet = async () => {
         const requestBody = {
             content: content,
             accountId: account.accountId,
         };
 
-        axios
-        .post("/api/tweets", requestBody)
-        .then((response) => {
-            //console.log("Tweet posted:", response.data);
+        try {
+            await axios.post("/api/tweets", requestBody);
+
+            // 삭제 시 새로고침
             window.location.replace("/");
-        })
-        .catch((error) => {
-            console.error("Error posting tweet:", error);
-        });
+        } catch (err) {
+            console.log("POST 에러 ", err);
+        }
     };
 
     function clickProfile(event) {
