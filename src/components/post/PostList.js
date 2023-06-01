@@ -6,7 +6,9 @@ import PostWrite from "./PostWrite";
 const PostList = (props) => {
     const {tweets, loading} = props;
     // 시간순 정렬 (최근 트윗 먼저)
-    tweets.sort((a, b) => new Date(b.createDate) - new Date(a.createDate));
+    const sortedTweets = tweets.length > 1 ? [...tweets].sort(
+        (a, b) => new Date(b.createDate) - new Date(a.createDate)
+    ) : tweets;
 
     return (
         <>
@@ -27,7 +29,7 @@ const PostList = (props) => {
                     {loading ? (
                         <LoadingText>Loading...</LoadingText>
                     ) : (
-                        tweets.map((tweet) => {
+                        sortedTweets.map((tweet) => {
                             return (
                                 <PostItem
                                     key={tweet.tweetId}
