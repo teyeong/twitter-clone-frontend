@@ -3,6 +3,7 @@
     to = "http://43.202.14.234:8080/:splat"
     status = 200
     force = true
+    method = ["GET", "POST", "DELETE"]
 
 [[redirects]]
     from = "/"
