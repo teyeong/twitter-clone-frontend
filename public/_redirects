@@ -1,0 +1,3 @@
+/api/* http://43.202.14.234:8080/:splat 200
+/api/tweets http://43.202.14.234:8080/tweets 201
+/* /index.html 200

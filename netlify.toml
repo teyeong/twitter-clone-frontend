@@ -3,9 +3,14 @@
     to = "http://43.202.14.234:8080/:splat"
     status = 200
     force = true
-    method = ["GET", "POST", "DELETE"]
 
 [[redirects]]
-    from = "/"
+    from = "/api/tweets"
+    to = "http://43.202.14.234:8080/tweets"
+    status = 201
+    force = true
+
+[[redirects]]
+    from = "/*"
     to = "/index.html"
     status = 200
